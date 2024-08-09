@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Strike The Pinball</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<link rel="icon" type="image/x-icon" href="../../Assets/images/favicon_white.png">
-<meta name="generator" content="Scirra Construct">
-<link rel="manifest" href="appmanifest.json">
 
-<link rel="stylesheet" href="style.css">
-<style>
-	#draggableButton {
-		position: absolute;
-		background-color: black;
-		top: 10px;
-		/* left: 815px; */
-		height: 50px;
-		width: 100px;
-		transform: translate(-50%, -50%);
-		padding: 10px 20px;
-		font-size: 16px;
-		cursor: move;
-		z-index: 9999;
-	}
-	#draggableButton img {
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<head>
+	<meta charset="UTF-8">
+	<title>Strike The Pinball</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="icon" type="image/x-icon" href="../../Assets/images/favicon_white.png">
+	<meta name="generator" content="Scirra Construct">
+	<link rel="manifest" href="appmanifest.json">
+
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#draggableButton {
+			position: absolute;
+			background-color: black;
+			top: 10px;
+			left: 815px;
+			height: 50px;
+			width: 100px;
+			transform: translate(-50%, -50%);
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: move;
+			z-index: 9999;
+		}
+
+		#draggableButton img {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
 
 </head>
+
 <body>
-		<button id="draggableButton">
-			<img src="../../Assets/images/favicon_white.png" alt="" class="h-100 w-100">
-		</button>
-<script>
-if (location.protocol.substr(0, 4) === "file")
-{
-	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
-}
-</script>
+	<!-- <button > -->
+	<!-- <a href="../zombiegunner/index.html" id="draggableButton">
+		<img src="../../Assets/images/favicon_white.png" alt="" class="h-100 w-100">
+	</a> -->
+	<!-- </button> -->
+	<script>
+		if (location.protocol.substr(0, 4) === "file") {
+			alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+		}
+	</script>
 	<script src="box2d.wasm.js"></script>
 	<noscript>
 		<div id="notSupportedWrap">
@@ -54,4 +59,5 @@ if (location.protocol.substr(0, 4) === "file")
 	<script src="../../Assets/js/draggingbutton.js"></script>
 
 </body>
+
 </html>
